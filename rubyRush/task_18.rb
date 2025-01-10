@@ -1,7 +1,9 @@
 puts "Сколько стоит 1 доллар в рублях?"
-course = gets.to_i
+course = gets.to_f
 puts "Сколько у вас рублей?"
-currency = gets.to_i
+currencyInRUB = gets.to_f
 
+currencyInUSD = currencyInRUB / course
 
+abort "Ваши запасы равны $ #{currencyInUSD}"
 
