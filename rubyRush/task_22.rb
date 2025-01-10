@@ -11,3 +11,9 @@ puts "Третий километр"
 sleep 1
 
 puts "Finish!"
+
+fruits = ['apple', 'banana', 'mango']
+
+fruits << 'cherry'
+
+puts fruits.to_s
