@@ -14,7 +14,13 @@
 #   about_triangle_project_2.rb
 #
 def triangle(a, b, c)
-  # WRITE THIS CODE
+  if (a == 0 && b == 0 && c == 0) 
+    raise TriangleError, "A triangle should not have any sides of length 0"
+  elsif (a < 0 || b < 0 || c < 0)
+    raise TriangleError, "Negative sides doesn`t make sence"
+  elsif ((a + b) <= c || (a + c) <= b || (b + c) <= a)
+    raise TriangleError, "Any two sides of a triangle should add up to more than the third side"
+  end
 end
 
 # Error class used in part 2.  No need to change this code.
